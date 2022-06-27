@@ -362,6 +362,10 @@ footer .left-section {
  position: relative;
 }
 
+.links li a::before {
+ bottom: -3px;
+}
+
 .right-section {
  flex-basis: 40%;
  display: flex;
