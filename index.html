@@ -35,22 +35,23 @@
         <li><a href="#">Blog</a></li>
         <li><a href="#">Careers</a></li>
       </ul>
-      <button class="go_to_action_btn"><a href="#">Register Invite</a></button>
+      <a href="#" class="go_to_action_btn">Register Invite</a>
     </nav>
   </header>
   <section id="hero">
     <div class="hero container">
+      <!--  <picture>
+        <source media="(max-width: 375px)" srcset="./images/bg-intro-mobile.svg">
+        <img src="./images/bg-intro-desktop.svg" alt="hero image phone">
+      </picture> -->
       <div class="hero__left_section">
         <h1>Next generation digital banking</h1>
         <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving,
           budgeting, investing, and much more.</p>
-        <button class="go_to_action_btn"><a href="#">Register Invite</a></button>
+        <a href="#" class="go_to_action_btn">Register Invite</a>
       </div>
       <div class="hero__right_section">
-        <picture>
-          <source media="(max-width: 375px)" srcset="./images/bg-intro-mobile.svg">
-          <img src="./images/bg-intro-desktop.svg" alt="hero image phone">
-        </picture>
+        <img src="./images/image-mockups.png" alt="">
       </div>
     </div>
   </section>
@@ -99,50 +100,54 @@
   <section class="articles">
     <div class="articles container">
       <h2>Latest Articles</h2>
-      <article class="article">
-        <img src="./images/image-currency.jpg" alt="money">
-        <div class="article-details">
-          <h5 class="article__author">By Claire Robinson</h5>
-          <h3 class="article__title">Receive money in any currency with no fees</h3>
-          <p class="article__description">
-            The world is getting smaller and we're becoming more mobile. So why should you be
-            forced to only receive money in a single ...
-          </p>
-        </div>
-      </article>
-      <article class="article">
-        <img src="./images/image-restaurant.jpg" alt="restaurant">
-        <div class="article-details">
-          <h5 class="article__author">By Wilson Hutton</h5>
-          <h3 class="article__title">Treat yourself without worrying about money</h3>
-          <p class="article__description">
-            Our simple budgeting feature allows you to separate out your spending and set realistic limits each
-            month.That means you ...
-          </p>
-        </div>
-      </article>
-      <article class="article">
-        <img src="./images/image-plane.jpg" alt="plane">
-        <div class="article-details">
-          <h5 class="article__author">By Wilson Hutton</h5>
-          <h3 class="article__title">Take your Easybank card wherever you go</h3>
-          <p class="article__description">
-            We want you to enjoy your travels. This is why we don't charge any fees on purchases while you're abroad.
-            We'll even show you ...
-          </p>
-        </div>
-      </article>
-      <article class="article">
-        <img src="./images/image-currency.jpg" alt="money">
-        <div class="article-details">
-          <h5 class="article__author">By Claire Robinson</h5>
-          <h3 class="article__title">Our invite-only Beta accounts are now live!</h3>
-          <p class="article__description">
-            After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an
-            invite through the site ...
-          </p>
-        </div>
-      </article>
+      <div class="all_articles">
+
+        <article class="article">
+          <img src="./images/image-currency.jpg" alt="money">
+          <div class="article-details">
+            <h5 class="article__author">By Claire Robinson</h5>
+            <h3 class="article__title">Receive money in any currency with no fees</h3>
+            <p class="article__description">
+              The world is getting smaller and we're becoming more mobile. So why should you be
+              forced to only receive money in a single ...
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="./images/image-restaurant.jpg" alt="restaurant">
+          <div class="article-details">
+            <h5 class="article__author">By Wilson Hutton</h5>
+            <h3 class="article__title">Treat yourself without worrying about money</h3>
+            <p class="article__description">
+              Our simple budgeting feature allows you to separate out your spending and set realistic limits each
+              month.That means you ...
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="./images/image-plane.jpg" alt="plane">
+          <div class="article-details">
+            <h5 class="article__author">By Wilson Hutton</h5>
+            <h3 class="article__title">Take your Easybank card wherever you go</h3>
+            <p class="article__description">
+              We want you to enjoy your travels. This is why we don't charge any fees on purchases while you're abroad.
+              We'll even show you ...
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="./images/image-currency.jpg" alt="money">
+          <div class="article-details">
+            <h5 class="article__author">By Claire Robinson</h5>
+            <h3 class="article__title">Our invite-only Beta accounts are now live!</h3>
+            <p class="article__description">
+              After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request
+              an
+              invite through the site ...
+            </p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
   <footer>
@@ -150,37 +155,29 @@
       <div class="left-section">
         <div class="social-media">
           <img src="./images/logo.svg" alt="logo" class="logo">
-          <div class="social-media">
-            <div class="icon-box">
-              <a href="#"><img src="./images/icon-facebook.svg" alt="facebook link"></a>
-            </div>
-            <div class="icon-box">
-              <a href="#"><img src="./images/icon-youtube.svg" alt="youtube link"></a>
-            </div>
-            <div class="icon-box">
-              <a href="#"><img src="./images/icon-twitter.svg" alt="twitter link"></a>
-            </div>
-            <div class="icon-box">
-              <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest link"></a>
-            </div>
-            <div class="icon-box">
-              <a href="#"><img src="./images/icon-instagram.svg" alt="instagram link"></a>
-            </div>
-
-          </div>
-          <div class="links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+          <div class="social-media-icons">
+            <a href="#"><img src="./images/icon-facebook.svg" alt="facebook link"></a>
+            <a href="#"><img src="./images/icon-youtube.svg" alt="youtube link"></a>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="twitter link"></a>
+            <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest link"></a>
+            <a href="#"><img src="./images/icon-instagram.svg" alt="instagram link"></a>
           </div>
         </div>
+        <ul class=" links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul class=" links">
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
 
       </div>
       <div class="right-section">
-        <button class="go_to_action_btn"><a href="#">Register Invite</a></button>
+        <a href="#" class="go_to_action_btn">Register Invite</a>
         <p>&copy; Easybank. All Rights Reserved</p>
       </div>
     </section>
