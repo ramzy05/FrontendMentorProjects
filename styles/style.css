@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+/* ======= css variables=======*/
+:root {
+ /* primary colors */
+ --prim-dark-blue: hsl(233, 26%, 24%);
+ --prim-lime-green: hsl(136, 65%, 51%);
+ --prim-bright-cyan: hsl(192, 70%, 51%);
+ /* end primary colors */
+
+ /* neutral colors */
+ --grayish-blue: hsl(233, 8%, 62%);
+ --light-grayish-blue: hsl(220, 16%, 96%);
+ --very-light-gray: hsl(0, 0%, 98%);
+ --white: hsl(0, 0%, 100%):;
+ /* end neutral colors */
+}
+
+/* ======= general style =======*/
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+body {
+ font-size: 18px;
+ font-family: 'Public Sans', sans-serif;
+}
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
