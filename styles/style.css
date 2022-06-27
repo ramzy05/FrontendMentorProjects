@@ -155,12 +155,16 @@ ul li a::before {
  bottom: -22px;
  margin: 0 auto;
  width: 0%;
- height: 3px;
+ height: 4px;
  background-image: var(--gradient);
  transition: var(--transition);
 }
 
 ul li a:hover::before {
+ width: 100%;
+}
+
+nav ul li a.active::before {
  width: 100%;
 }
 
