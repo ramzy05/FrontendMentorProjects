@@ -48,6 +48,7 @@ body {
  font-family: 'Public Sans', sans-serif;
  background-color: var(--white);
  max-width: 100vw !important;
+ overflow-x: hidden;
 }
 
 a {
@@ -91,7 +92,7 @@ h1 {
 }
 
 h2 {
- font-size: 2.5rem;
+ font-size: 2.2rem;
 }
 
 p {
@@ -157,15 +158,13 @@ header {
 .hero__right_section {
  flex-basis: 70%;
  height: 100%;
- position: relative;
  overflow: hidden;
 }
 
 .hero__right_section img {
  position: absolute;
  right: -100px;
- width: 600px;
- display: none;
+ width: 630px;
 }
 
 #services {
@@ -176,8 +175,8 @@ header {
 #services .services {
  width: 100%;
  height: 100%;
- padding-top: 6rem;
- padding-bottom: 6rem;
+ padding-top: 5rem;
+ padding-bottom: 5rem;
  flex-direction: column;
  align-items: flex-start;
  row-gap: 30px;
@@ -201,7 +200,7 @@ header {
  display: flex;
  flex-direction: column;
  align-items: flex-start;
- justify-content: space-around;
+ row-gap: 20px;
 }
 
 #articles {
