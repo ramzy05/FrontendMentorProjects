@@ -56,8 +56,7 @@ body div#blur {
  background-image: linear-gradient(to bottom, rgba(45, 49, 77, 0.897) 95%, rgba(255, 255, 255, 0));
  opacity: 0;
  z-index: -100;
- transition-delay: 1s;
- transition: all 1.5s;
+ transition: opacity 1.5s;
 }
 
 body #blur.body-blur-box {
