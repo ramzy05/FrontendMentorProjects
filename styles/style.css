@@ -49,7 +49,7 @@ body div#blur {
  height: 100%;
  overflow: hidden;
  position: absolute;
- background-image: linear-gradient(to bottom, rgba(45, 49, 77, 0.897) 4%, rgba(255, 255, 255, 0));
+ background-image: linear-gradient(to bottom, rgba(45, 49, 77, 0.897) 50%, rgba(255, 255, 255, 0));
  top: 0px;
  left: 0;
  right: 0;
