@@ -1,4 +1,5 @@
 const navLinks = document.querySelectorAll('nav li a');
+
 /* active links */
 navLinks.forEach(link => {
  link.addEventListener('click', function () {
@@ -8,13 +9,30 @@ navLinks.forEach(link => {
 })
 const removeActive = actualLink => {
  navLinks.forEach(link => {
+
   if (link !== actualLink && link.classList.contains('active')) link.classList.remove('active')
+  if (navBar.classList.contains('show')) {
+   navBar.classList.remove('show')
+   toogleBlurBody()
+   openIcon.style.display = 'inline-block'
+   closeIcon.style.display = 'none'
+  }
  })
 }
 /* end active links */
 
 /* toogle menu mobile*/
+const navBar = document.querySelector('nav');
+const toogleBlurBody = () => {
+ const blurBox = document.querySelector('#blur')
+ if (blurBox.classList.contains('body-blur-box')) {
 
+  blurBox.classList.remove('body-blur-box')
+  return
+ }
+ blurBox.classList.add('body-blur-box')
+ return
+}
 
 const toggleBtnMenu = document.querySelectorAll('.toggle-menu img')
 
@@ -26,12 +44,18 @@ toggleBtnMenu.forEach(btn => {
   this.style.display = 'none';
   if (this.dataset.action == 'open-menu') {
    closeIcon.style.display = 'inline-block'
+   navBar.classList.toggle('show')
+   toogleBlurBody()
   } else {
    openIcon.style.display = 'inline-block'
+   navBar.classList.toggle('show')
+   toogleBlurBody()
   }
 
 
  })
 })
+
+
 
 /* end toogle menu mobile*/ 
