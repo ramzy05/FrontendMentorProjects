@@ -21,16 +21,7 @@
  --bd: 1px solid red;
 }
 
-.attribution {
- font-size: 14px;
- color: var(--grayish-blue);
- text-align: center;
- padding: 20px 10px;
-}
 
-.attribution a {
- color: var(--prim-dark-blue);
-}
 
 /* ======= general style =======*/
 
@@ -53,7 +44,7 @@ body {
  position: relative;
 }
 
-body>div {
+body div#blur {
  width: 100%;
  height: 100%;
  overflow: hidden;
@@ -378,10 +369,11 @@ nav ul li a.active::before {
 }
 
 footer {
+ position: absolute;
  background-color: var(--prim-dark-blue);
  min-height: 190px;
  width: 100%;
- bottom: 0;
+ bottom: 70px;
  left: 0;
  right: 0;
 }
@@ -447,7 +439,22 @@ footer .left-section {
  font-weight: 300;
 }
 
-/*480 ======= mobile style 375px=======*/
+
+.attribution {
+ font-size: 14px;
+ color: var(--grayish-blue);
+ text-align: center;
+ padding: 20px 10px;
+ position: absolute;
+ z-index: 100;
+ bottom: 0;
+}
+
+.attribution a {
+ color: var(--prim-dark-blue);
+}
+
+/* ======= mobile style=======*/
 
 @media only screen and (max-width: 480px) {
 
@@ -594,6 +601,212 @@ footer .left-section {
   text-align: center;
  }
 
+
+ .all_articles {
+  gap: 80px;
+ }
+
+ .article__author {
+  font-size: .6em;
+ }
+
+ .article__description {
+  font-size: .8em;
+
+ }
+
+
+ .article-details {
+  padding-left: 0.5em;
+ }
+
+
+
+ footer section {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+ }
+
+
+ footer .left-section,
+ footer .links {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 30px;
+ }
+
+
+ footer .right-section {
+  align-items: center;
+ }
+
+ .social-media {
+  row-gap: 30px;
+ }
+
+ .social-media .logo {
+  padding-left: 100px;
+ }
+}
+
+/* ======= tablette style=======*/
+
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+
+ h1 {
+  flex-basis: 20%;
+  text-align: center;
+  font-size: 2.3rem;
+
+ }
+
+ h2 {
+  font-size: 1.6rem;
+ }
+
+ header,
+ .container,
+ .hero,
+ footer {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+ }
+
+
+ header img.logo {
+  width: 130px;
+ }
+
+ header .toggle-menu {
+  transition: 1.5s;
+  display: block;
+ }
+
+ .toggle-menu img.open-menu {
+  display: inline-block;
+ }
+
+ .toggle-menu img.close-menu {
+  transition: 1.5s;
+  display: none;
+ }
+
+ header .go_to_action_btn {
+  display: none;
+ }
+
+ ul li a::before {
+  display: none;
+ }
+
+ header nav {
+  display: none;
+ }
+
+ nav.show {
+  display: block;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 140%;
+  background-color: var(--white);
+  padding: 20px 0;
+  min-height: 300px !important;
+  border-radius: 10px;
+ }
+
+
+
+ nav ul {
+  height: 100%;
+  justify-content: space-evenly;
+  flex-direction: column;
+ }
+
+ nav ul li a {
+  color: var(--prim-dark-blue);
+  margin-left: 0 !important;
+ }
+
+ #hero {
+  max-width: 100vw;
+  position: relative;
+  top: -160px;
+ }
+
+ #hero .hero {
+  background-image: url(../images/bg-intro-mobile.svg);
+  background-position: top 35% left;
+  background-size: contain;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  row-gap: 160px;
+ }
+
+ .hero__left_section {
+  flex-basis: 10%;
+  align-items: center;
+  text-align: center;
+ }
+
+ .hero__left_section h1 {
+  font-size: 2.4rem;
+  padding-right: 0em;
+ }
+
+ .hero__left_section p {
+  padding-right: 0px;
+ }
+
+ .hero__right_section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+ }
+
+
+
+ .hero__right_section img {
+  position: static;
+  top: 10px;
+  right: 0px;
+  width: 650px;
+  /* display: none; */
+ }
+
+
+ #services .services {
+  padding-top: 5rem;
+  align-items: center;
+  row-gap: 30px;
+ }
+
+ .services>p {
+  text-align: center;
+ }
+
+ .services>.all_services {
+  gap: 80px;
+ }
+
+ .all_services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  text-align: center;
+ }
+
+
+ #articles .articles {
+
+  align-items: center;
+ }
 
  .all_articles {
   gap: 80px;
