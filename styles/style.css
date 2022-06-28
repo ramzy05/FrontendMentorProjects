@@ -342,7 +342,7 @@ nav ul li a.active::before {
  flex-direction: column;
  justify-content: space-between;
  align-items: flex-start;
- padding: 0 1em 0 2em;
+ padding: 0 1em 1.5em 2em;
  row-gap: 13px;
 }
 
