@@ -27,9 +27,11 @@ const toogleBlurBody = () => {
  const blurBox = document.querySelector('#blur')
  if (blurBox.classList.contains('body-blur-box')) {
 
+  blurBox.style.display = 'none'
   blurBox.classList.remove('body-blur-box')
   return
  }
+ blurBox.style.display = 'block'
  blurBox.classList.add('body-blur-box')
  return
 }
