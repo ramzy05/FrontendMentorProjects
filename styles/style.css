@@ -101,7 +101,7 @@ p {
  letter-spacing: 0.0025em;
 }
 
-nav,
+header,
 .container,
 footer {
  padding-left: 7.5rem;
@@ -116,6 +116,9 @@ footer {
 
 /* ======= custom style =======*/
 header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
  position: fixed;
  top: 0;
  left: 0;
@@ -127,25 +130,29 @@ header {
 }
 
 header nav {
- width: 100%;
+ width: 70%;
  height: 100%;
  display: flex;
  justify-content: space-between;
  align-items: center;
+ border: var(--bd);
 }
 
 nav ul {
  display: flex;
  align-items: center;
- justify-content: space-evenly;
+ justify-content: center;
  list-style: none;
- flex-basis: 40%;
+ flex-basis: 100%;
 }
 
+
 nav ul li a {
- font-size: 0.9em;
+ font-size: 0.85em;
  color: var(--grayish-blue);
  position: relative;
+ margin-left: 2rem;
+
 }
 
 ul li a::before {
@@ -157,6 +164,7 @@ ul li a::before {
  width: 0%;
  height: 4px;
  background-image: var(--gradient);
+ margin-left: 2rem;
  transition: var(--transition);
 }
 
