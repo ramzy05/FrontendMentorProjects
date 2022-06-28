@@ -96,6 +96,7 @@ h2 {
 }
 
 p {
+ font-size: .9em;
  color: var(--grayish-blue);
  font-weight: 400;
  letter-spacing: 0.0025em;
@@ -133,9 +134,8 @@ header nav {
  width: 70%;
  height: 100%;
  display: flex;
- justify-content: space-between;
+ justify-content: center;
  align-items: center;
- border: var(--bd);
 }
 
 nav ul {
@@ -154,6 +154,8 @@ nav ul li a {
  margin-left: 2rem;
 
 }
+
+
 
 ul li a::before {
  content: '';
@@ -175,6 +177,11 @@ ul li a:hover::before {
 nav ul li a.active::before {
  width: 100%;
 }
+
+.toggle-menu {
+ display: none;
+}
+
 
 #hero {
  width: 100%;
@@ -232,7 +239,7 @@ nav ul li a.active::before {
 #services .services {
  width: 100%;
  height: 100%;
- padding-top: 5rem;
+ padding-top: 7.5rem;
  padding-bottom: 5rem;
  flex-direction: column;
  align-items: flex-start;
@@ -248,12 +255,16 @@ nav ul li a.active::before {
 .services>.all_services {
  width: 100%;
  display: grid;
- grid-template-columns: repeat(4, 1fr);
- grid-template-rows: minmax(240px, auto);
- column-gap: 16px;
+ grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+ grid-auto-rows: a repeat(auto-fill, minmax(200px, auto));
+ gap: 13px;
+ /* display: flex;
+ flex-wrap: wrap;
+ gap: 10px 16px; */
 }
 
 .all_services .service {
+ max-width: 100%;
  display: flex;
  flex-direction: column;
  align-items: flex-start;
@@ -277,14 +288,20 @@ nav ul li a.active::before {
 }
 
 .all_articles {
- display: grid;
+ /* display: grid;
  grid-template-columns: repeat(4, 1fr);
  grid-template-rows: minmax(300px, auto);
- column-gap: 15px;
+ column-gap: 15px; */
+ width: 100%;
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+ grid-auto-rows: a repeat(auto-fill, minmax(200px, auto));
+ gap: 13px;
 
 }
 
 .article {
+ max-width: 100%;
  display: grid;
  grid-template-columns: 1fr;
  align-items: flex-start;
@@ -329,7 +346,7 @@ nav ul li a.active::before {
 
 .article__description {
 
- font-size: .90em;
+ font-size: .89em;
 }
 
 footer {
@@ -337,6 +354,8 @@ footer {
  height: 190px;
  width: 100%;
  bottom: 0;
+ left: 0;
+ right: 0;
 }
 
 footer section {
@@ -371,7 +390,7 @@ footer .left-section {
  font-weight: 300;
  display: flex;
  flex-direction: column;
- justify-content: space-evenly;
+ justify-content: space-between;
  flex-wrap: wrap;
 }
 
@@ -403,7 +422,7 @@ footer .left-section {
 
 /* ======= mobile style 375px=======*/
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width: 480px) {
  .hero {
   background-image: url(../images/bg-intro-mobile.svg);
  }

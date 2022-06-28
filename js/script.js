@@ -12,3 +12,26 @@ const removeActive = actualLink => {
  })
 }
 /* end active links */
+
+/* toogle menu mobile*/
+
+
+const toggleBtnMenu = document.querySelectorAll('.toggle-menu img')
+
+const [openIcon, closeIcon] = [...toggleBtnMenu]
+
+toggleBtnMenu.forEach(btn => {
+ btn.addEventListener('click', function (e) {
+  e.stopPropagation()
+  this.style.display = 'none';
+  if (this.dataset.action == 'open-menu') {
+   closeIcon.style.display = 'inline-block'
+  } else {
+   openIcon.style.display = 'inline-block'
+  }
+
+
+ })
+})
+
+/* end toogle menu mobile*/ 
