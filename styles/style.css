@@ -373,7 +373,6 @@ footer {
  background-color: var(--prim-dark-blue);
  min-height: 190px;
  width: 100%;
- bottom: 70px;
  left: 0;
  right: 0;
 }
@@ -441,17 +440,20 @@ footer .left-section {
 
 
 .attribution {
- font-size: 14px;
- color: var(--grayish-blue);
  text-align: center;
+ font-size: 14px;
+ color: var(--white);
  padding: 20px 10px;
- position: absolute;
  z-index: 100;
- bottom: 0;
 }
 
-.attribution a {
- color: var(--prim-dark-blue);
+.attribution p a {
+ color: var(--prim-bright-cyan);
+ transition: var(--transition);
+}
+
+.attribution p a:hover {
+ color: var(--prim-lime-green);
 }
 
 /* ======= mobile style=======*/
