@@ -327,6 +327,7 @@ nav ul li a.active::before {
  row-gap: 30px;
  padding-bottom: 1em;
  border-radius: 7px;
+ overflow: hidden;
 }
 
 .article img {
