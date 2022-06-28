@@ -326,6 +326,7 @@ nav ul li a.active::before {
  grid-template-rows: 200px auto;
  row-gap: 30px;
  padding-bottom: 1em;
+ border-radius: 7px;
 }
 
 .article img {
@@ -333,8 +334,6 @@ nav ul li a.active::before {
  height: 100%;
  object-fit: cover;
  object-position: center;
- border-top-right-radius: 7px;
- border-top-left-radius: 7px;
 }
 
 .article-details {
