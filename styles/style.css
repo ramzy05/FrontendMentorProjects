@@ -38,7 +38,7 @@ body {
 
  font-size: 18px;
  font-family: 'Public Sans', sans-serif;
- background-color: var(--white);
+ background-color: var(--very-light-gray);
  max-width: 100vw !important;
  overflow-x: hidden;
  position: relative;
@@ -139,7 +139,7 @@ header {
  left: 0;
  right: 0;
  height: 65px;
- background-color: var(--white);
+ background-color: var(--very-light-gray);
  z-index: 100;
 }
 
@@ -318,6 +318,7 @@ nav ul li a.active::before {
 }
 
 .article {
+ background-color: var(--white);
  max-width: 100%;
  display: grid;
  grid-template-columns: 1fr;
@@ -514,6 +515,7 @@ footer .left-section {
   transform: translateX(-50%);
   position: absolute;
   top: 140%;
+  background-color: var(--very-light-gray);
   background-color: var(--white);
   padding: 20px 0;
   min-height: 300px !important;
@@ -603,6 +605,9 @@ footer .left-section {
   text-align: center;
  }
 
+ #articles .articles.container {
+  align-items: center;
+ }
 
  .all_articles {
   gap: 80px;
