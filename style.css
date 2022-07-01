@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* ===== general style ===== */
+:root {
+ scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* ===== end general style ===== */
+/* ===== css variables ===== */
+:root {
+ --main-bg-color: hsl(218, 28%, 13%);
+ --second-bg-color: hsl(217, 28%, 15%);
+ --third-bg-color: hsl(216, 53%, 9%);
+ --fourth-bg-color: hsl(219, 30%, 18%);
+ --call-to-act1: hsl(176, 68%, 64%);
+ --call-to-act2: hsl(198, 60%, 50%);
+ --error-color: hsl(0, 100%, 63%);
+ --white: hsl(0, 0%, 100%);
+ --gradient: linear-gradient(to right, var(--call-to-act1), var(--call-to-act2))
+}
+
+/* ===== end variables ===== */
+
+body {
+ font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.go_to_action_btn,
+.team_go_to_action_link {
+ font-family: 'Raleway', sans-serif;
+}
+
+.attribution {
+ font-size: 11px;
+ text-align: center;
+}
+
+.attribution a {
+ color: hsl(228, 45%, 44%);
+}
