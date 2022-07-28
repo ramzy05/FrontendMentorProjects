@@ -38,6 +38,8 @@ body {
   color: var(--white);
   font-size: 14px;
   font-weight: 400;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -685,11 +687,10 @@ i::before {
 /* ===== end tablette ===== */
 
 /* ===== mobile ===== */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:480px) {
 
   header {
     padding: 1.5rem 1.5rem;
-
     right: initial;
   }
 
@@ -723,6 +724,13 @@ i::before {
 
   #team .team {
     padding-bottom: 25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+
+  .all-features {
+    padding: 0;
   }
 
   .team__intro {
@@ -738,6 +746,7 @@ i::before {
   .team__text {
     width: 100%;
     gap: 10px;
+    padding-left: 1rem;
   }
 
   .team__text h1 {
@@ -750,7 +759,7 @@ i::before {
   }
 
   .members-item {
-    width: 90%;
+    width: 100%;
     flex: none;
   }
 
