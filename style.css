@@ -705,12 +705,24 @@ i::before {
     justify-content: center;
     background-image: url(./images/bg-curvy-mobile.svg);
     background-repeat: no-repeat;
-    background-position: bottom left -3rem;
+    /* background-position: bottom left -3rem; */
 
-    background-size: 120%;
+    background-size: 100%;
     background-color: var(--intro-bg-color);
     padding-top: 1rem;
     width: 100%;
+  }
+
+  header .logo {
+    width: 100px;
+  }
+
+  .hero__image {
+    width: 250px;
+  }
+
+  .hero h1 {
+    padding: 0;
   }
 
   #hero .hero {
@@ -740,7 +752,7 @@ i::before {
   }
 
   .team__image {
-    width: 420px;
+    width: 350px;
   }
 
   .team__text {
